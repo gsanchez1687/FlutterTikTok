@@ -4,12 +4,9 @@ class VideoPost{
 
   final String caption;
   final String videoUrl;
-  final String thumbnailUrl;
   final int likes;
-  final int comments;
-  final int shares;
   final int views;
 
-  VideoPost({required this.caption, required this.videoUrl, required this.thumbnailUrl, this.likes = 0, required this.comments, required this.shares, this.views = 0});
+  VideoPost({required this.caption, required this.videoUrl, this.likes = 0, this.views = 0});
 
 }
