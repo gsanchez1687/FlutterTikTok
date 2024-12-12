@@ -12,6 +12,8 @@ class DiscoverProvider extends ChangeNotifier {
   bool isLoading = true;
   List<VideoPost> videos = [];
 
+  get initialLoading => null;
+
   Future<void> loadNextPage() async {
 
     await Future.delayed(const Duration(seconds: 2));
